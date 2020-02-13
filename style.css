@@ -1,10 +1,12 @@
 @font-face {
     font-family: Open Sans;
+    font-weight: 700;
     src: url(OpenSans-Bold.ttf);
 }
 
 @font-face {
     font-family: Open Sans;
+    font-weight: 400;
     src: url(OpenSans-Regular.ttf);
 }
 
@@ -136,11 +138,6 @@ body {
    padding-left: 7px;
 }
 
-main {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .athlets-section, .players-section {
   background-color: #ffffff;
   min-height: 306px;
@@ -260,7 +257,7 @@ main {
 
 .be-active-image, .find-contact-image, .work-it-image {
   max-width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   position: relative;
 }
@@ -437,7 +434,7 @@ main {
   padding-left: 4px;
 }
 
-@media(min-width:768px) and (max-width:1919px){
+@media(min-width:768px) and (max-width:960px){
     .welcome {
         background-image: url(football_1280.jpg);
     }
@@ -679,7 +676,7 @@ main {
     }
 }
     
-    @media(min-width:1920px) {
+    @media(min-width:961px) and (max-width:1920px) {
        .welcome {
         background-image: url(football_1920.jpg);
       }
@@ -729,11 +726,14 @@ main {
         padding-left: 28px;
       }
        
-      .athlets {
-        padding-left: 830px;
+      .athlets .collaboration, .athlets .connection, .athlets .growth  {
+        padding-left: 52%;
       }
         
-        
+      .athlets .athlets-main-title {
+         padding-left: 53%;
+      }
+          
       .athlets-section, .players-section  {
         min-height: 186px;
       }
@@ -748,13 +748,13 @@ main {
       .athlets-main-title::after {
         content: url(footballer_566.png);
         top: 30px;
-        left: -614px;
+        left: 20%;
       }
     
       .players-main-title::after {
         content: url(basketballer_991.png);
         top:30px;
-        left:630px;
+        left: 32%;
       }   
           
       .athlets-title {
@@ -817,7 +817,6 @@ main {
       }    
         
       .active-contact-work {
-        min-width: 1024px;
         display: flex;
         flex-wrap: wrap;
       }
@@ -837,11 +836,11 @@ main {
       }
         
       .be-active-container, .work-it-container {
-        margin-left: 128px;
+        margin-left: 6.66%;
       }
         
       .find-contact-container {
-        margin-left: 180px;
+        margin-left: 9.37%;
       }
         
       .be-active-image,.find-contact-image, .work-it-image {
@@ -850,7 +849,7 @@ main {
       }
         
       .find-contact-image {
-        margin-left: 50px;    
+        margin-left: 105px;    
       }
          
      .be-active-image::after {
@@ -884,7 +883,7 @@ main {
       box-sizing: border-box;
       padding-top: 35px;
       top: 240px;
-      left: 0;
+      left: 50px;
     }
     
     .work-it-image::after {
@@ -925,7 +924,7 @@ main {
        border-radius: 25px;
        z-index: 3;
        top: 315px;
-       left: 43px;         
+       left: 93px;         
      }
         
     .be-active, .work-it, .find-contact {
@@ -936,5 +935,37 @@ main {
     .be-active-text, .find-contact-text, .work-it-text {
       font-size: 24px;
       padding-top: 100px;
-    }  
+    } 
+    
+        .footer-logo-title {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .footer-title {
+         font-size: 80px;
+        width: 680px;
+            margin: 230px 0 160px 35px;
+        }
+        
+        .footer-subtitle {
+          font-size: 30px;
+            text-align: left;
+            padding-left: 15px;
+        }
+        
+        .footer-logo {
+            width: 132px;
+            margin: 230px 0 150px;
+            border-radius: 35px;
+            padding: 25px 20px;
+        }
+        
+        footer .links {
+            margin: 0 0 260px;
+        }
+        
+        footer .logo-image {
+            margin: 0 0 50px;
+        }
   }
