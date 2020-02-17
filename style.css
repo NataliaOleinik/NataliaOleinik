@@ -762,7 +762,7 @@ body {
       .players-main-title::after {
         content: url(basketballer_991.png);
         top:30px;
-        left: 811px;
+        left: 74.06%;
       }   
           
       .athlets-title {
@@ -865,7 +865,7 @@ body {
       }
         
       .be-active-image,.find-contact-image, .work-it-image, .be-active-picture, .find-contact-picture, .work-it-picture {
-        max-width: 960px;
+        max-width: 100%;
         position: relative;   
       }
          
