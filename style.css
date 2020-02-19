@@ -159,7 +159,7 @@ body {
     position: absolute;
     z-index: 2;
     bottom: -296px;
-    left: 50px;
+    right: 50px;
 }
 
 .players-main-title::after {
@@ -257,7 +257,6 @@ body {
 
 .be-active-image, .find-contact-image, .work-it-image, .be-active-picture, .find-contact-picture, .work-it-picture {
   max-width: 100%;
-  height: 100%;
   object-fit: cover;
   position: relative;
 }
@@ -487,10 +486,12 @@ body {
     
     .athlets-section {
       min-height: 140px;
+      margin-bottom: 0;
     }
     
     .players-section {
       min-height: 150px; 
+      margin-bottom: 0;
     }
     
      .athlets-main-title, .players-main-title {
@@ -504,6 +505,10 @@ body {
       padding-left: 283px;
     }
 
+    .athlets-title {
+      padding-top: 0;
+    }
+
     .players .athlets-title{
       padding-left: 25px;
     }
@@ -511,7 +516,7 @@ body {
     .athlets-main-title::after {
       content: url(footballer_497.png);
       top: 95px;
-      left: 0;
+      right: 436px;
     }
     
     .players-main-title::after {
@@ -740,6 +745,7 @@ body {
           
       .athlets-section, .players-section  {
         min-height: 186px;
+        margin-bottom: 0;
       }
       
       .athlets-main-title, .players-main-title {
@@ -766,7 +772,7 @@ body {
       }   
           
       .athlets-title {
-        padding: 108px 15px 0 20px;
+        padding: 55px 15px 0 20px;
         max-width: 886px;
       }
 
@@ -866,7 +872,8 @@ body {
         
       .be-active-image,.find-contact-image, .work-it-image, .be-active-picture, .find-contact-picture, .work-it-picture {
         max-width: 100%;
-        position: relative;   
+        position: relative; 
+        display: block;  
       }
          
      .be-active-image::after, .be-active-picture::after {
@@ -882,8 +889,8 @@ body {
        height: 115px;
        box-sizing: border-box;
        padding-top: 35px;
-       top: -460px;
-       left: 905px;
+       bottom: 330px;
+       left: 896px;
        z-index: 2;
     }
     
@@ -900,7 +907,7 @@ body {
       height: 115px;
       box-sizing: border-box;
       padding-top: 35px;
-      top: -540px;
+      bottom: 370px;
       left: -60px;
       z-index: 2;
     }
@@ -918,8 +925,8 @@ body {
       height: 115px;
       box-sizing: border-box;
       padding-top: 35px;
-      top: -540px;
-      left: 905px;
+      bottom: 370px;
+      left: 896px;
       z-index: 2;
     }
     
@@ -931,11 +938,11 @@ body {
       height: 5px;
       border-radius: 25px;
       z-index: 3;
-      top: 0;
-      left: 0;
+      bottom: 360px;
+      left: 940px;
     }
 
-    .work-it-image::before .work-it-picture::before {
+    .work-it-image::before, .work-it-picture::before {
       content: "";
       background-color: #8f7bc8;
       position: absolute;
@@ -943,8 +950,8 @@ body {
       height: 5px;
       border-radius: 25px;
       z-index: 3;
-      top: 0;
-      left: 0;
+      bottom: 400px;
+      left: 940px;
     }
     
      .find-contact-image::before, .find-contact-picture::before {
@@ -955,8 +962,8 @@ body {
        height: 5px;
        border-radius: 25px;
        z-index: 3;
-       top: 315px;
-       left: 93px;         
+       bottom: 400px;
+       left: -17px;         
      }
         
     .be-active, .work-it, .find-contact {
